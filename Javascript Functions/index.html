@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<section>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <div class="input">0</div>
+            </div>
+        </div>
+        <div class="all_button">
+            <div class="button all-clear" onclick="getResult('AC')">AC</div>
+            <div class="button last-entity-clear" onclick="getResult('C')">C</div>
+            <div class="button number" onclick="getResult('^')">x<span class="upper">n</span></div>
+            <div class="button" onclick="getResult('#')">&radic;x</div>
+            <div class="button" onclick="getResult('/')">&divide;</div>
+            <div class="button" onclick="getResult('7')">7</div>
+            <div class="button" onclick="getResult('8')">8</div>
+            <div class="button" onclick="getResult('9')">9</div>
+            <div class="button btn-1" onclick="getResult('*')">&times;</div>
+            <div class="button" onclick="getResult('4')">4</div>
+            <div class="button" onclick="getResult('5')">5</div>
+            <div class="button" onclick="getResult('6')">6</div>
+            <div class="button btn-1" onclick="getResult('-')">-</div>
+            <div class="button" onclick="getResult('1')">1</div>
+            <div class="button" onclick="getResult('2')">2</div>
+            <div class="button" onclick="getResult('3')">3</div>
+            <div class="button btn-1" onclick="getResult('+')">+</div>
+            <div class="button btn-0" onclick="getResult('0')">0</div>
+            <div class="button" onclick="getResult('.')">.</div>
+            <div class="button btn-1 equal" onclick="getResult('=')">=</div>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
