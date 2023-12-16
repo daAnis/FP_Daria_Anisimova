@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 @font-face {
-  font-family: "Apple Garamond-Regular";
+  font-family: "AppleGaramond-Regular";
   src: url("https://anima-uploads.s3.amazonaws.com/projects/60815285491537605f5aecca/fonts/applegaramond.ttf")
     format("truetype");
 }

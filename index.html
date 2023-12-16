@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
-    <div class="landing-page">
+    <div class="landing-page" id="main">
       <div class="div">
         <div class="div-2">
           <div class="hero">
@@ -44,7 +43,7 @@
               </p>
             </div>
             <div class="text-wrapper-3">Leave No Trace!</div>
-            <div class="frame-3"><div class="text-wrapper-4">Contact Sales</div></div>
+            <div class="frame-3"><button class="text-wrapper-4" id="btn-1">Contact Sales</button></div>
             <div class="bio-disposable">BIO-DISPOSABLE DINNERWARE</div>
           </div>
           <div class="statistic">
@@ -301,5 +300,53 @@
         </div>
       </div>
     </div>
+    <form class="contact-sales" id="form-1">
+      <div class="div">
+          <div class="frame">
+              <div class="input-field">
+                  <input id="name" class="text-wrapper" placeholder="Full Name" type="text" />
+              </div>
+              <div class="div-wrapper">
+                  <input id="email" class="text-wrapper" placeholder="Business email" type="email" />
+              </div>
+              <div class="div-wrapper">
+                  <input id="phone" class="text-wrapper" placeholder="Business phone" type="tel" />
+              </div>
+              <div class="input-field">
+                  <input id="company" class="text-wrapper" placeholder="Company" type="text" />
+              </div>
+              <div class="input-field-2">
+                  <textarea id="message" class="text-wrapper-2" placeholder="Your Message"></textarea>
+              </div>
+          </div>
+          <p class="ready-to-join-with">Ready to join with us?<br />Let’s go!</p>
+          <div class="group">
+              <div class="overlap">
+                  <div class="overlap-group-wrapper">
+                      <div class="overlap-group">
+                          <div class="text-wrapper-3">100%</div>
+                      </div>
+                  </div>
+                  <div class="text-wrapper-4">DISPOSABLE</div>
+              </div>
+          </div>
+          <div class="frame-2"><button class="text-wrapper-5">Submit</button></div>
+          <img class="icon" src="img/icon.svg" id="btn-2" />
+          <div class="overlap-wrapper">
+              <div class="leave-no-trace-wrapper">
+                  <div class="leave-no-trace">Leave <br />No Trace!</div>
+              </div>
+          </div>
+          <div class="frame-3">
+              <p class="p">Questions? Chat with our sales.</p>
+              <button class="button">
+                  <img class="fluent-chat" src="img/fluent-chat-20-filled.svg" />
+                  <div class="text-wrapper-6">Live Chat</div>
+              </button>
+          </div>
+          <img class="vector" src="img/vector-1.svg" />
+      </div>
+  </form>
+    <script src="script.js"></script>
   </body>
 </html>
