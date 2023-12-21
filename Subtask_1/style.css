@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+.weather {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(360deg, #3594bf 0%, rgba(255, 255, 255, 0) 100%), #53a6cb;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.border {
+    margin: 40px auto;
+    padding: 40px;
+}
+
+.weather__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.current {
+    margin-bottom: 2em;
+}
+
+.current__city {
+    font-size: 3em;
+}
+
+.current__description {
+    font-size: 1.5em;
+}
+
+.current__temperature {
+    font-size: 4em;
+}
+
+.entryField {
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px;
+}
+
+.enterButton {
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    font-size: xx-large;
+}

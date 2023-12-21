@@ -1,0 +1,20 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+}
+
+button {
+    padding: 10px;
+    border-radius: 4px;
+    width: 100px;
+}
+
+#root > * {
+   margin: 10px;
+}

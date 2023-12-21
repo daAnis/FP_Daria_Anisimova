@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="weather">
+        <div class="border">
+            <div>
+                <input class="entryField" type="text" placeholder="Введите название города...">
+                <button class="enterButton" id="search">&#9745;</button>
+            </div>
+            <div class="weather__inner">
+                <div class="current">
+                    <div class="current__city" id="sity"></div>
+                    <div class="current__description"></div>
+                    <div class="current__temperature"></div>
+                </div>
+
+                <div class="forecast">
+                    <div class="forecast__item">
+                        <img id="img" src="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
