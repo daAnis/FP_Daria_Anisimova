@@ -1,0 +1,89 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    list-style: none;
+    gap: 20px;
+}
+
+li {
+    background: #F5F5FA;
+    box-shadow:
+        inset -0.5rem -0.5rem 1rem #ffffff, 
+        inset 0.5rem 0.5rem 1rem rgba(170, 170, 204, 0.5), 
+        inset 0.2rem 0.2rem 0.4rem rgba(170, 170, 204, 0.25), 
+        inset -0.2rem -0.2rem 0.4rem rgba(255, 255, 255, 0.5);
+    padding: 1.2rem 3.2rem 1.2rem 3.2rem;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #7878AB;
+    flex: 0 0 1em;
+    cursor: pointer;
+    border-radius: 4rem;
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 3.6rem;
+    font-weight: 300;
+    line-height: 1.1111111111;
+    opacity: 0.6;
+    white-space: nowrap;
+}
+
+.selected {
+    opacity: 1.0;
+}
+
+hr {
+    border: none;
+    margin: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+button {
+    border-radius: 3.2rem;
+    box-shadow: 
+        -1rem -1rem 2rem #ffffff, 
+        1rem 1rem 2rem rgba(170, 170, 204, 0.5), 
+        0.5rem 0.5rem 1rem rgba(170, 170, 204, 0.25), 
+        -0.5rem -0.5rem 1rem rgba(255, 255, 255, 0.5);
+    color: #7878aa;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 2.4rem;
+    font-weight: 300;
+    height: 100%;
+    justify-content: center;
+    line-height: 1.1111111111;
+    cursor: pointer;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 3.2rem 1.2rem 3.2rem;
+    font-size: 2.4rem;
+    font-weight: 300;
+    height: 100%;
+    justify-content: center;
+    line-height: 1.1111111111;
+    white-space: nowrap;
+    color: #7878aa;
+    border: none;
+}
+
+button::before {
+    content: 'Спрятать котиков';
+}
+
+.btn-selected {
+    background-color: #e4e4f0;
+    color: #7878aa;
+}
+
+.btn-selected::before {
+    content: 'Показать котиков';
+}

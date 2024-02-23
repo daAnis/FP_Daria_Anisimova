@@ -1,0 +1,24 @@
+<div>
+    <button [class.btn-selected]="!catsOn" (click)="toogleCats()"></button>
+</div>
+<hr>
+<ul>
+    @for (pet of pets; track pet.id; let idx = $index) {
+        @if ((pet.type!='Cat')||(catsOn && pet.type=='Cat')) {
+            <li [class.selected]="selectedPetId==pet.id" (click)="onSelectPet(pet.id)">
+                {{pet.name}}
+                @if (selectedPetId == pet.id) {
+                    <hr>
+                    Вид:&ensp;{{ pet.type }}<br>
+                    Имя:&ensp;{{ pet.name }}<br>
+                    Пол:&ensp;{{ pet.gender }}<br>
+                    Порода:&ensp;{{ pet.species }}<br>
+                    Вес:&ensp;{{ pet.weight }}<br>
+                    Цвет:&ensp;{{ pet.color }}
+                }
+            </li>
+        }
+    } @empty {
+        Список животных пуст
+    }
+</ul>
